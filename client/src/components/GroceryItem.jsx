@@ -1,7 +1,9 @@
 import React from 'react';
 
 const GroceryItem = (props) => (
-  <div></div>
+  <div>
+    
+  </div>
 )
 
 export default GroceryItem;
