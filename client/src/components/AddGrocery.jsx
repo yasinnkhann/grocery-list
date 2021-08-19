@@ -8,7 +8,27 @@ class AddGrocery extends React.Component {
   }
 
   render () {
-    return null;
+    return (
+    <div>
+      <input
+      type="text"
+      placeholder="Enter item name.."
+      onChange={(e) => this.props.handleItemChange(e.target.value)}
+      value={this.props.itemVal}
+      />
+      <br />
+      <input
+      type="text"
+      placeholder="Enter the quantity.."
+      onChange={(e) => this.props.handleQtyChange(e.target.value)}
+      value={this.props.qtyVal}
+      />
+      <br />
+      <button onClick={() => this.props.addToCartBtn()}>
+        Add to cart!
+      </button>
+    </div>
+    );
   }
 }
 
